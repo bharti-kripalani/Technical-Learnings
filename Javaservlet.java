@@ -1,4 +1,5 @@
-//Client request from java servlet can contain a lot of data and most of the data can be retrieved using different methods. Here are those methods. Most methods are self explanatory so their explanation is not provided.
+//Client request from java servlet can contain a lot of data and most of the data can be retrieved using different methods. 
+//Here are those methods. Most methods are self explanatory so their explanation is not provided.
 
 getLocale(): //Returns the preferred locale that the client will accept the locale in.
 getAttribute(String name): // Returns the value of the attribute.

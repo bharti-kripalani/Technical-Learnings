@@ -1,0 +1,16 @@
+Compiler translates a human readable file to the computer readable file. Here are few things to remember about compiler:
+
+A compiler is a special type of computer program that translates a human readable text file into a form that the computer can more easily understand
+It converts from source code to object code. 
+Converts the high level language(Java, C, C++) into low level language(assembly language or machine code).
+Decompiler converts from low level to high level language.
+'Language translator' or 'source to source translator' or 'language convertor' converts  between high level languages.
+Language rewriter - Translates the form of expressions without a change of language. Finally an executable is created.
+Intermediate output in a multistage compiler is usually called pseudo-code. 
+Errors that limit compilers in understanding a program are called syntax errors.
+Error in program functioning are called logic errors
+Cross compiler allows the text file(set of instructions) written for 1-computer to be compiled and run on a different computer(manufacturer)
+Compiler operations: Lexical analysis, preprocessing, parsing, semantic analysis, code generation, code optimization
+'Compiler-compiler' or 'Parser generator' - Helps to create a compiler
+Compiler programs can also be specialized. 
+Certain language structures are better suited for a particular task than others, so specific compilers were developed for specific tasks or languages. Some compilers are multistage or multiple pass. A first pass could take a very natural language and make it closer to a computer understandable language. A second or even a third pass could take it to the final stage, the executable file. 

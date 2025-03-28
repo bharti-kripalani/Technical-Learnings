@@ -13,4 +13,7 @@ Cross compiler allows the text file(set of instructions) written for 1-computer 
 Compiler operations: Lexical analysis, preprocessing, parsing, semantic analysis, code generation, code optimization
 'Compiler-compiler' or 'Parser generator' - Helps to create a compiler
 Compiler programs can also be specialized. 
-Certain language structures are better suited for a particular task than others, so specific compilers were developed for specific tasks or languages. Some compilers are multistage or multiple pass. A first pass could take a very natural language and make it closer to a computer understandable language. A second or even a third pass could take it to the final stage, the executable file. 
+Certain language structures are better suited for a particular task than others, so specific compilers were developed for specific tasks or languages. 
+Some compilers are multistage or multiple pass.
+A first pass could take a very natural language and make it closer to a computer understandable language. 
+A second or even a third pass could take it to the final stage, the executable file. 

@@ -1,0 +1,90 @@
+Grep is a very common question and it is widely used on day to day basis for searching text in log files. This blog post will help you understand most basic and commonly used options of grep command and its usage. 
+
+Grep    -A           10         “Box”              File.tx
+It will print 10 lines after the string “Box” and the string “Box” equaling the number of times it occurred in the file.
+
+Grep    -B           10         “Box”              File.txt
+It will print 10 lines before the string “Box” and the string “Box” equaling the number of times it occurred in the file.
+
+Grep    -b           “Box”              File.txt
+It will print the byte offset before the each occurrence of the string in the file.
+
+Grep    -c           “Box”              File.txt
+It will print the count of lines where the string matches
+
+Grep    -v           “Box”              File.txt
+It will print the lines that are not matching.
+
+Grep    -c -v   “Box”              File.txt
+It will print the count of the no. of lines that are not matching the string “Box”.
+
+Grep    -D          skip/read           Device name
+It will read or skip the device, whose name is specified
+
+Grep    -E           “Box”              File.txt
+It will interpret the expression as an extended regular expression.
+  
+Grep    -H          “Box”              *
+It will give you the names of the files along with the matching string. Generally filename is appended at the beginning, when multiple files are searched for.
+
+Grep    -h           “Box”              *
+Supress the filename
+
+Grep    -i            “Box”              *
+Ignore case. It will output both “Box” and “Box”
+
+Grep    -L           “Box”              *
+It will output the files where the string “Box” is not present
+
+Grep    -l            “Box”              *
+It will output the files where the string “Box” is present
+
+Grep    -line     “Box”              *
+Use line buffering, it could be performance penalty.
+
+Grep    -m         2            “Box”              *
+It will output m = 2 number of times the string “Box” from each file.
+
+Grep    -n           “Box”              *
+Prefix each line of output with the line number.
+
+Grep    -o           “Box”              *
+Output only the string Box instead of the entire line, where the matching string is available.
+
+Grep    -P           “B[a-z]arti”                         *
+Interpret the search string as a pattern for regular expression
+
+Grep    -r            “Box”              *
+Recursively look for the string Box in all folders and sub-folders
+
+Grep    -R           “Box”              *
+Recursively look for the string Box in all folders and sub-folders
+
+Grep    -q           “Box”              *
+Don’t output anything if the match is found or even if an error occurs. Just be silent.
+
+Grep    -s           “Box”              Box.txt
+If the string Box.txt is not present then the option –s will suppress this error. –s will suppress the error about non-existent and unreadable files
+
+Grep    -U          “Box”              *
+Treat the files as binary
+Note: From the website.
+
+Grep    -u           Box *
+It will output the bytes where the string is present. It works only on unix OS. It has no effect on Windows. To output the bytes we should use –b option
+
+Grep    –V
+It will output the version of the grep command
+
+Grep    -v           Rocks                *
+It will output the lines where the string Rocks is not present.
+
+Grep    -w          Rocks                *
+It will match only those words which are full words on the whole and not the string where Rocks is a part of the whole word
+
+Grep    -x           “This is good.”   *
+It will output only those lines which are exact match and not other lines.
+B{3}h{4}[ha]{5} -> bbbhhhhhahahaha
+You need \ character before the characters {,},(,),+,|
+ 
+ 
